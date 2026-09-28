@@ -1,8 +1,7 @@
 import math
-radius = int(input("Ведіть радіус кола: "))
-def calculator():
-    if radius < 0:
-        raise ValueError("Radius cannot be negative")
-    return math.pi*(radius**2)
-
-print(f"Площа кола: {calculator()}")
+factorial = int(input("Ведіть ваш факторіал: "))
+def factorial_action(n):
+    if factorial < 0:
+        raise ValueError("Ваше число відємне")
+    return math.factorial(factorial)
+print(factorial_action(factorial))
